@@ -1,0 +1,4 @@
+apiVersion = "agentic-engineer/v1"
+name = "l4"
+createdAt = "2026-08-28T09:07:22Z"
+idea = "create a simple todo app with ability for users to login and create new todos and mark as complete. todos are saved in database"
