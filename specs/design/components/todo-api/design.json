@@ -1,0 +1,26 @@
+{
+  "name": "todo-api",
+  "type": "service",
+  "version": "0.1.0",
+  "language": "Ballerina",
+  "buildpack": "docker",
+  "appPath": "todo-api",
+  "entrypoint": "deployment/service",
+  "exposure": "internet",
+  "dependencies": [
+    {
+      "kind": "platform-resource",
+      "name": "todo-db",
+      "resourceType": "postgres-cnpg",
+      "description": "Stores each user's todos: text, completed state, and ownership."
+    },
+    {
+      "kind": "platform-resource",
+      "name": "user-auth",
+      "resourceType": "thunder-app",
+      "description": "Validates the caller's bearer token; the gateway injects the resolved caller identity."
+    }
+  ],
+  "description": "Ballerina service owning the Todo entity: create a todo, list the caller's own todos, and mark one complete, always scoped to the authenticated caller. Does not support editing todo text or deleting a todo.",
+  "skillsPinned": ["openapi-conventions", "ballerina", "api-management", "thunder-authentication"]
+}
