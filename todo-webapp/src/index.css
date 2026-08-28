@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f7f7fb;
+  color: #1a1a2e;
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5ef;
+  padding: 16px 32px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.content {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.row-heading h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ff7a00;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.row-add input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #d9d9e6;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #d9d9e6;
+  background: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background: #ff7a00;
+  border-color: #ff7a00;
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.row-badges {
+  gap: 8px;
+}
+
+.badge {
+  border: 1px solid #d9d9e6;
+  background: white;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.badge-info {
+  border-color: #6c9bff;
+  color: #2255cc;
+}
+
+.badge-success {
+  border-color: #4caf50;
+  color: #2e7d32;
+}
+
+.badge-active {
+  outline: 2px solid #ff7a00;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.todo-table th,
+.todo-table td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eeeef5;
+}
+
+.status-open {
+  color: #b26a00;
+}
+
+.status-done {
+  color: #2e7d32;
+}
+
+.link-action {
+  background: none;
+  border: none;
+  color: #ff7a00;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+}
+
+.error {
+  color: #c62828;
+}
